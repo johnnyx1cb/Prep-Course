@@ -2,10 +2,11 @@
 
 // Crea una variable "string", puede contener lo que quieras:
 
-const nuevaString = "arroz";
+var nuevaString = "arroz";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 2;
+
+var nuevoNum = 4;
 
 // Crea una variable booleana:
 
@@ -36,8 +37,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var resultado = x + y;
-  return resultado;
+  return x + y;
 }
 
 function resta(x, y) {
@@ -65,22 +65,22 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if( x === y ) {
-    return true;
-  } else {
-    return false;
-  }
+  if (x === y){
+        return true;
+    }else{
+        return false
+    }
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length === str2.length) {
-    return true;
-  } else {
-    return false;
-  }
+  if(str1.length === str2.length){
+        return true
+    }else{
+        return false
+    }
 }
 
 function menosQueNoventa(num) {
@@ -88,10 +88,10 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num < 90) {
-    return true
-  } else {
-    return false
-  }
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function mayorQueCincuenta(num) {
@@ -99,10 +99,10 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num > 50) {
-    return true;
-  } else {
-    return false;
-  }
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function obtenerResto(x, y) {
@@ -115,11 +115,11 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 == 0) {
-    return true;
-  } else {
-    return false;
-  }
+  if(num % 2 === 0) {
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function esImpar(num) {
@@ -127,10 +127,10 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if(num % 2 !== 0) {
-    return true;
-  } else {
-    return false
-  }
+        return true;
+    }else{
+        return false;
+    }
 }
 
 function elevarAlCuadrado(num) {
@@ -143,7 +143,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num ** 3;
+  return num ** 3
 }
 
 function elevar(num, exponent) {
@@ -185,7 +185,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + "!";
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
