@@ -200,7 +200,41 @@ function esVocal(letra){
         return "Dato incorrecto"
     }
 }
+function Imprime1aN(n) {
+    for (var i = 1; i <= n; i++){
+        if(i % 2 === 0) {
+            console.log(i);
+    }
+    if(i > 200){
+        for(var j = 0; j < 10; j++){
+            console.log(j);
+        }
+        return;
+    }
+} 
+}
 
+
+function matriz (n, m) {
+    for (var i = 0; i < n; i++){
+        for (var j = 0; j < m; j++){
+            console.log(i + "," + j)
+        }
+    }
+}
+
+function matriz (n, m) {
+    var i = 0;
+    var j = 0;
+    while(i < n){
+        while(j < m){
+            console.log(i,j);
+            j++;
+        }
+        j = 0;
+        i++;
+    }
+}
 
 
 
