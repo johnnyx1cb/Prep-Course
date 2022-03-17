@@ -10,12 +10,6 @@ function obtenerMayor(x, y) {
     return x;
   } 
   return y;
-
-  if (x > y){
-    return x;
-  }
-    return y;
- 
 }
 
 function mayoriaDeEdad(edad) {
@@ -27,14 +21,9 @@ function mayoriaDeEdad(edad) {
     return "Allowed";
   }
   return "Not allowed";
-
-  if (edad >= 18){
-    return "Allowed";
-  } 
-    return "Not allowed";
-
 }
   
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -94,10 +83,7 @@ function colors(color) {
       return "This is orange";
     default:
       return "Color not found";
-
-    
-
-  }
+    }
 }
 
 function esDiezOCinco(numero) {
@@ -188,15 +174,19 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero <= 1) return false ;
-
-  for( let i = 2; i < numero; i++) {
-    if (numero % i === 0) {
+  if (numero <= 1){
+    return false;
+  } for (let i = 2; i < numero; i++) {
+    if (numero % i === 0){
       return false;
     }
+  } 
+    return true;
   }
-  return true;
-}
+
+
+    
+
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
@@ -238,14 +228,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var suma = numero; 
-  var i = 0
-  do { 
-     suma = suma + 5;
-     i++;
-  } while (i < 8);
-  return suma;
-}
+    var suma = numero
+    var i = 0
+    do {
+        suma = suma + 5;
+        i++;    
+    } while (i < 8);
+      return suma;
+  }
+    
 
 
 // No modificar nada debajo de esta línea
