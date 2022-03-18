@@ -467,3 +467,53 @@ function doWhile(numero) {
     } while (i < 7);
     return suma
 }
+
+function devolverPrimerElemento(array) {
+    // Devuelve el primer elemento de un  array (pasado por parametro)
+    // Tu código:
+    return array[0];
+}
+
+function devolverUltimoElemento(array) {
+    // Devuelve el último elemento de un array
+    // Tu código:
+    return array[array.length - 1]
+}
+
+function obtenerLargoDelArray(array) {
+    // Devuelve el largo de un array
+    // Tu código:
+    return array.length;
+}
+
+function incrementarPorUno(array) {
+    // "array" debe ser una matriz de enteros (int/integers)
+    // Aumenta cada entero por 1
+    // y devuelve el array
+    // Tu código:
+    var arr = [];
+    var suma = 0;
+    for (var i = 0; i < array.length; i++){
+        suma = array[i] + 1;
+        arr.push(suma)
+    }
+        return arr;
+    }
+
+    function agregarItemAlFinalDelArray(array, elemento) {
+        // Añade el "elemento" al final del array
+        // y devuelve el array
+        // Tu código:
+        array.push(elemento);
+        return array;
+    }
+
+function dePalabrasAFrase(palabras) {
+        // "palabras" es un array de strings/cadenas
+        // Devuelve un string donde todas las palabras estén concatenadas
+        // con espacios entre cada palabra
+        // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
+        // Tu código:
+        palabras.join(' ');
+        return palabras;
+}
