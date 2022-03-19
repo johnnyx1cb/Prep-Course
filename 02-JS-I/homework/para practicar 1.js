@@ -616,3 +616,34 @@ function empiezaConNueve(n) {
             return false;
         }
 }
+
+function todosIguales(arreglo) {
+    //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
+    //retornar true, caso contrario retornar false.
+    //Escribe tu código aquí
+    var aux = arreglo[0]
+    for (var i = 1; i < arreglo.length; i++) {
+        if (arreglo[i] !== aux){
+            return false;
+        }
+    } return true;
+}
+
+function mesesDelAño(array) {
+    //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+    // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
+    //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
+    // Tu código:
+    var arr = [];
+    for (var i = 0; i < array.length; i++) {
+        if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
+            arr.push(array[i]);
+        }
+    }
+        if(arr.length !== 3){
+            return "No se encontraron los meses pedidos";
+        }else{
+        return arr;
+        }
+        
+}
