@@ -647,3 +647,31 @@ function mesesDelAño(array) {
         }
         
 }
+
+function breakStatement(numero) {
+    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+    //Guardar cada nuevo valor en un array. 
+    //Devolver el array
+    //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+    //devolver: "Se interrumpió la ejecución"
+    //Pista: usá el statement 'break'
+    // Tu código:
+    var arr = [];
+    var suma = numero;
+    for (var i = 0; i < 10; i++) {
+        suma = suma + 2;
+        arr.push(suma);
+        if(suma === i){
+            return "Se interrumpió la ejecución"
+        }
+    } return arr;
+}
+
+function continueStatement(numero) {
+    //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
+    //Guardar cada nuevo valor en un array.    
+    //Devolver el array
+    //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
+    //Pista: usá el statement 'continue'
+    // Tu código:
+}
