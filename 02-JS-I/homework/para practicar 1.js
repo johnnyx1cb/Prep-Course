@@ -897,3 +897,28 @@ function agregarStringInvertida() {
         return inverso
     }
 }
+
+
+function saludar(parametro){
+    return 'Hola ' + parametro;
+}
+
+function crearSaludo(usuario, password, cb){
+    return cb (usuario, password);
+}
+
+crearSaludo('toni', saludar);//esto va a salir en la consola si lo imprimo 'Hola, toni'
+
+
+crearSaludo(15, function multiplicarPorDiez(parametro, parametro2){//esto podría ir abajo, y eld e abajo arriba pra entenderlo mejor
+    return parametro * 10;//en teoría acá a al izquierda debería usarse el parametro2, pero el profe no lo puso
+});
+
+
+function multiplicarPorDiez(parametro) {//en erealidad esto podría ir primero y lo de arriba en lugar de este
+    return parametro * 10;
+}
+
+crearSaludo(15, multiplicarPorDiez)//esto va a salir 150
+
+
