@@ -921,4 +921,16 @@ function multiplicarPorDiez(parametro) {//en erealidad esto podría ir primero y
 
 crearSaludo(15, multiplicarPorDiez)//esto va a salir 150
 
+var numbers = [1,2,3,4,5];
+var total = numbers.reduce(function(acc, elemento){
+    return acc + elemento;
+})
+
+function sumar(a,b){
+    return a + b;
+}
+function sumar (a, b){
+    return a + b;
+}
+
 
