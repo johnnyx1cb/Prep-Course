@@ -59,6 +59,10 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  var coincidencias = array.filter(function(el){
+    return el.charAt(0) === 'a'
+  })
+  return coincidencias;
 }
 
 // No modificar nada debajo de esta línea
